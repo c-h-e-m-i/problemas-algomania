@@ -97,7 +97,7 @@ public class P49_AlgoMarket {
              * > IMPORTANTE: Si el artículo del que más unidades necesitamos no está
              * incluido en ninguna oferta, cogemos el siguiente. Y así sucesivamente hasta
              * que alguno esté cubierto.
-             * > Hacemos esto pues, en el peor caso, todos los artículos tendrán {3, 3, 3,
+             * > Hacemos esto porque, en el peor caso, todos los artículos tendrán {3, 3, 3,
              * 3, 3} unidades pendientes, y la unión será {1, 1, 1, 1, 1}, así que tendremos
              * que aplicar la unión de ofertas 3 veces.
              */
@@ -411,4 +411,5 @@ public class P49_AlgoMarket {
             return p.cota - this.cota;
         }
     }
+
 }
