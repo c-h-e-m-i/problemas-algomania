@@ -94,9 +94,9 @@ public class P49_AlgoMarket {
              * > Por ejemplo, si necesitamos las unidades recogidas en este array para cada
              * artículo i: {1, 1, 2, 3, 1}, tendríamos que multiplicar el precio de la unión
              * por 3.
-             * > IMPORTANTE: Si el artículo del que más unidades necesitamos no está
-             * incluido en ninguna oferta, cogemos el siguiente. Y así sucesivamente hasta
-             * que alguno esté cubierto.
+             * > IMPORTANTE: Si bien es cierto que el artículo con más unidades podría no
+             * estar cubierto por la unión de ofertas, hacer la comprobación podría tomarnos
+             * más tiempo en balance que explorar las ramas por una mala cota.
              * > Hacemos esto porque, en el peor caso, todos los artículos tendrán {3, 3, 3,
              * 3, 3} unidades pendientes, y la unión será {1, 1, 1, 1, 1}, así que tendremos
              * que aplicar la unión de ofertas 3 veces.
@@ -413,3 +413,4 @@ public class P49_AlgoMarket {
     }
 
 }
+
